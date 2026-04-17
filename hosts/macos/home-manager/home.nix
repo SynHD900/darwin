@@ -5,6 +5,7 @@
 {
   home = {
     common.enable = true;
+    browser.firefox.enable = true;
 
     shell = {
       direnv.enable = true;
