@@ -4,6 +4,7 @@
 }:
 {
   home = {
+    claude.enable = true;
     common.enable = true;
     browser.firefox.enable = true;
 
