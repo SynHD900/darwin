@@ -325,11 +325,11 @@
         "proxmox-nixos": "proxmox-nixos"
       },
       "locked": {
-        "lastModified": 1776510452,
-        "narHash": "sha256-UjkCncFSK1pZWB2BYmLj/58THr3zB/lw5z527P04UrQ=",
+        "lastModified": 1776605720,
+        "narHash": "sha256-pwfw6rPbZZptwUNJsY4NdL1jbHgk2xsX9EmjJCa07SA=",
         "ref": "main",
-        "rev": "f6dddcbda2af9fccf573eabb5b909b34a1611983",
-        "revCount": 20,
+        "rev": "022ef87349db6d6e5bf6944bc29f27a741ac9813",
+        "revCount": 34,
         "type": "git",
         "url": "ssh://git@github.com/SynHD900/modules.git"
       },

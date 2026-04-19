@@ -10,10 +10,21 @@
     };
   };
 
-  outputs = { self, nixpkgs, my-modules, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      my-modules,
+      ...
+    }@inputs:
     let
       mainUser = "synhd";
       darwinSystem = "aarch64-darwin";
+
+      pkgs = import nixpkgs {
+        system = darwinSystem;
+        config.allowUnfree = true;
+      };
 
       allInputs = inputs // my-modules // my-modules.inputs;
 
@@ -26,6 +37,7 @@
     {
       darwinConfigurations = {
         macos = allInputs.nix-darwin.lib.darwinSystem {
+          inherit pkgs;
           specialArgs = darwinSpecialArgs;
           modules = [
             ./hosts/macos

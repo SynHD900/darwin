@@ -1,5 +1,6 @@
 {
   inputs,
+  lib,
   mainUser,
   pkgs,
   system,
@@ -56,6 +57,7 @@
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = system;
+
   nix.settings.download-buffer-size = 50 * 1024 * 1024; # 50 MiB
 
   networking.hostName = "macos";

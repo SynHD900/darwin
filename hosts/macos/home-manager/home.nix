@@ -1,5 +1,6 @@
 {
   mainUser,
+  lib,
   ...
 }:
 {
